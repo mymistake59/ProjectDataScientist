@@ -15,7 +15,7 @@ puts " #{hash.key(hash.values.min)} vaut #{'%.8f' % hash.values.min} "
 puts
 
 puts "Quels sont les devises dont le cours est inférieur à 6000 ?"
-number = hash.select{|k,v| v < 6000}
+number = hash.select{|key,value| value < 6000}
 puts "Il y a #{number.count} devises qui sont inférieures à 6000."
 puts
 
